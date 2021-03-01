@@ -1,4 +1,6 @@
-streamlit==0.61.0
-pandas==0.25.3
-numpy==1.18.1
-scikit-learn==0.22.1
+streamlit==0.64.0
+pandas==1.1.5
+altair==4.1.0
+pydeck==0.4.0
+statistics==1.0.3.5
+matplotlib==3.2.2
