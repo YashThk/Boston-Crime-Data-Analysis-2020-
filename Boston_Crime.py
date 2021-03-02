@@ -15,8 +15,6 @@ import streamlit as sl
 import statistics as st
 #Pandas for analyzing the data in dataframes 
 import pandas as pd
-#CSV for reading the .csv files(i.e. data files)
-import csv
 #Matplotlib for plotting pie chart 
 import matplotlib.pyplot as plt
 #Pydeck for ploting map 
@@ -47,17 +45,11 @@ frame1.reset_index(level=0, inplace=True)
 frame1['Code'] = frame1['alphaCode'].astype(str).str[0] + frame1['numericCode'].map(str)
 
 #Reading another file to get the names of the districts
-#Making a dictionary of these district and their codes in the data 
-with open('BostonDistricts.csv', mode='r') as infile:
-    data = csv.DictReader(infile)
-       
-    district =[]
-    district_name =[]
-    
-    for row in data: 
-        district.append(str(row['DISTRICT_NUMBER']))
-        district_name.append(str(row['DISTRICT_NAME']))
-        
+#Making a dictionary of these district and their codes in the data
+
+data = pd.read_csv('BostonDistricts.csv')
+district = data['DISTRICT_NUMBER'].tolist()
+district_name = data['DISTRICT_NAME'].tolist()   
 
 DISTRICTS = {district[i]: district_name[i] for i in range(len(district))}
 
