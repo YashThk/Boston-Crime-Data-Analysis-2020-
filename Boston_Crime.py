@@ -369,7 +369,7 @@ else:
     sl.error('Some matters, such as assault, can be both crimes and civil wrongs at the same\ntime. The police can prosecute for assault and the victim can take civil action to\nrecover money (or some other kind of compensation) for any injury suffered.\n\nIt is not always easy to tell when something is a crime. A person who takes money\nwithout permission commits a criminal offence, whereas a person who fails to\npay back money commits a civil wrong (not a crime). Although a civil action can be\ncommenced to recover the money, the borrower can only be prosecuted for a\ncriminal offence if fraud is involved.')
     sl.error('Whether or not the police decide to charge a wrongdoer with a criminal offence is\nentirely their decision. A victim of crime cannot force the police to prosecute an\noffender but it is possible, although not common, to make a private prosecution.\nIt is advisable to get legal advice if you are considering this\n\nThere are a range of sources of law which establish the existence of crimes.')
     sl.text('Source: New Mexico State Law Board')
-    sl.image('crime.jpg',use_column_width=True)
+    sl.image('crime.JPG',use_column_width=True)
 
 #------------------------------------------------------------------------------
 
